@@ -1,22 +1,137 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Aleo:400,400i|Poppins:700&display=swap');
+
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+.header-text{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #100007;
+  letter-spacing: 1px;
+}
+.header-text-delete{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: red;
+  letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body-text{
+  font-family: 'Aleo', serif;
+  font-weight: 400;
+  color: #535353;
+}
+
+.muted{
+  font-size: .8rem;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.layout{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
 }
 
-.App-link {
-  color: #09d3ac;
+.sidebar, main{
+  padding: 0 1rem;
+  margin: 1rem 0;
+  min-height: 400px;
 }
+
+.sidebar{
+  border-right: 1px solid #ccc;
+  width: 320px;
+}
+
+.sidebar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li{
+  padding: .5rem;
+  margin: 1rem auto;
+}
+
+.sidebar li.active{
+  background: #F6F6F6;
+}
+
+main{
+  flex: 1;
+}
+
+main header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-group .button{
+  margin-left: 1rem;
+}
+
+article{
+  max-width: 640px;
+  margin: 1rem auto;
+}
+
+/* Button Styling */
+.button{
+  border: none;
+  border-radius: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background: #535353;
+}
+
+.button.block{
+  display: block;
+  width: 100%;
+}
+
+.button.primary{
+  background: #3FA7D6;
+}
+
+.button.secondary{
+  background: #EE6352;
+}
+
+.button.tertiary{
+  background: #59CD90;
+}
+
+.titlebox {
+  border:2px solid #456879;
+  font-size:22px;
+  height: 30px;
+  width: 230px;
+  padding: 5px;
+}
+.textarea {
+	border:2px solid #456879;
+  width: 90%;
+  font-size:16px;
+}
+
+.submit{
+  border: none;
+  border-radius: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  color: #fff;
+  display: block;
+  width: 80px;
+  margin-top:20px;
+  text-transform: uppercase;
+  background: rgb(41, 160, 1);
+}
+
